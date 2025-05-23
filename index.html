@@ -4,232 +4,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ślubna Mucha – Ozdoby i dodatki ślubne</title>
+  <title>Ślubna Mucha - Ozdoby ślubne</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #f8f8f8;
+      background-color: #fff;
     }
     header {
-      background: linear-gradient(135deg, #f5d1d1, #fbe8d3);
-      padding: 40px 20px;
+      background: linear-gradient(135deg, #e3d5ca, #f5ebe0);
+      color: #5a3e36;
       text-align: center;
-      color: #333;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    nav {
-      background-color: #f0f0f0;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #444;
-      font-weight: bold;
+      padding: 2rem 1rem;
     }
     section {
-      padding: 40px 20px;
-      background: #fff;
-      margin: 20px auto;
+      padding: 2rem 1rem;
       max-width: 1000px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 0 auto;
     }
     h2 {
-      color: #7e4a3b;
-      text-align: center;
-      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 1rem;
       justify-content: center;
     }
     .gallery img {
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 30%;
+      border-radius: 8px;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 600px;
-      margin: 30px auto 0 auto;
+    .personalizacja {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #f8f4f0;
+      border-radius: 8px;
     }
-    label {
-      font-weight: bold;
-    }
-    input, select, textarea {
-      padding: 8px;
-      font-size: 16px;
-    }
-    button {
-      padding: 10px;
-      background-color: #7e4a3b;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    footer {
+    .kontakt {
       text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 40px;
+      background-color: #f5ebe0;
+      padding: 2rem 1rem;
+    }
+    .kontakt p {
+      margin: 0.5rem 0;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Ślubna Mucha</h1>
+    <p>Ozdoby i dodatki ślubne personalizowane z pasją</p>
+  </header>
 
-<header>
-  <h1>Ślubna Mucha</h1>
-  <p>Ozdoby i dodatki ślubne z personalizacją</p>
-</header>
+  <section>
+    <h2>Zaproszenia</h2>
+    <div class="gallery">
+      <img src="images/zaproszenia/1.jpg" alt="Zaproszenie 1">
+      <img src="images/zaproszenia/2.jpg" alt="Zaproszenie 2">
+      <img src="images/zaproszenia/3.jpg" alt="Zaproszenie 3">
+    </div>
+    <div class="personalizacja">
+      <p>Wybierz wzór, kolor, tekst, kopertę, kalkę, wykończenie (lak, wstążka, kwiatek itp.).</p>
+    </div>
+  </section>
 
-<nav>
-  <a href="#zaproszenia">Zaproszenia</a>
-  <a href="#winietki">Winietki</a>
-  <a href="#zawieszki">Zawieszki</a>
-  <a href="#wieszaki">Wieszaki</a>
-  <a href="#koszyczki">Koszyczki</a>
-  <a href="#skrzynki">Skrzynki</a>
-  <a href="#prezenty">Prezenty</a>
-  <a href="#kontakt">Kontakt</a>
-</nav>
+  <section>
+    <h2>Winietki</h2>
+    <div class="gallery">
+      <img src="images/winietki/1.jpg" alt="Winietka 1">
+      <img src="images/winietki/2.jpg" alt="Winietka 2">
+      <img src="images/winietki/3.jpg" alt="Winietka 3">
+    </div>
+    <div class="personalizacja">
+      <p>Personalizacja: wzór, font, kolor papieru, dodatki.</p>
+    </div>
+  </section>
 
-<section id="zaproszenia">
-  <h2>Zaproszenia</h2>
-  <div class="gallery">
-    <img src="images/zaproszenia/1.jpg" alt="Zaproszenie 1">
-    <img src="images/zaproszenia/2.jpg" alt="Zaproszenie 2">
-    <img src="images/zaproszenia/3.jpg" alt="Zaproszenie 3">
-  </div>
-  <form>
-    <h3>Personalizacja zaproszeń</h3>
-    <label>Wybierz wzór zaproszenia:</label>
-    <select><option>Rustykalne</option><option>Nowoczesne</option><option>Romantyczne</option></select>
-    <label>Kolor zaproszenia:</label>
-    <input type="text" placeholder="np. pudrowy róż, ecru">
-    <label>Tekst zaproszenia:</label>
-    <textarea rows="4" placeholder="Wpisz swój tekst..."></textarea>
-    <label>Dołącz kopertę?</label>
-    <select><option>Tak</option><option>Nie</option></select>
-    <label>Opcja zamknięcia:</label>
-    <select><option>Lak</option><option>Wstążka</option><option>Bez przewiązania</option></select>
-    <label>Dodatki:</label>
-    <input type="text" placeholder="np. kłos, kwiat, susz">
-    <button type="submit">Wyślij personalizację</button>
-  </form>
-</section>
+  <section>
+    <h2>Zawieszki na alkohol</h2>
+    <div class="gallery">
+      <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
+      <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
+      <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
+    </div>
+    <div class="personalizacja">
+      <p>Wybierz styl, tekst, kolor, przewiązanie.</p>
+    </div>
+  </section>
 
-<section id="winietki">
-  <h2>Winietki</h2>
-  <div class="gallery">
-    <img src="images/winietki/1.jpg" alt="Winietka 1">
-    <img src="images/winietki/2.jpg" alt="Winietka 2">
-    <img src="images/winietki/3.jpg" alt="Winietka 3">
-  </div>
-  <form>
-    <h3>Personalizacja winietek</h3>
-    <label>Wybierz styl winietki:</label>
-    <select><option>Eleganckie</option><option>Boho</option></select>
-    <label>Imiona gości:</label>
-    <textarea rows="4" placeholder="Wpisz imiona gości..."></textarea>
-    <button type="submit">Wyślij personalizację</button>
-  </form>
-</section>
+  <section>
+    <h2>Skrzynki na koperty</h2>
+    <div class="gallery">
+      <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
+      <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
+      <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
+    </div>
+    <div class="personalizacja">
+      <p>Wybierz wzór: 1, 2 lub 3.</p>
+    </div>
+  </section>
 
-<section id="zawieszki">
-  <h2>Zawieszki na alkohol</h2>
-  <div class="gallery">
-    <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
-    <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
-    <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
-  </div>
-  <form>
-    <h3>Personalizacja zawieszek</h3>
-    <label>Tekst zawieszki:</label>
-    <textarea rows="3" placeholder="Wpisz tekst..."></textarea>
-    <button type="submit">Wyślij personalizację</button>
-  </form>
-</section>
+  <section>
+    <h2>Prezenty dla rodziców</h2>
+    <div class="gallery">
+      <img src="images/prezenty/1.jpg" alt="Prezent 1">
+      <img src="images/prezenty/2.jpg" alt="Prezent 2">
+      <img src="images/prezenty/3.jpg" alt="Prezent 3">
+    </div>
+    <div class="personalizacja">
+      <p>Wybierz wzór: 1, 2 lub 3.</p>
+    </div>
+  </section>
 
-<section id="wieszaki">
-  <h2>Wieszaki</h2>
-  <div class="gallery">
-    <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
-    <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
-    <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
-  </div>
-  <form>
-    <h3>Personalizacja wieszaków</h3>
-    <label>Wybierz wzór:</label>
-    <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-    <button type="submit">Wyślij personalizację</button>
-  </form>
-</section>
+  <section>
+    <h2>Koszyczki ratunkowe</h2>
+    <div class="gallery">
+      <img src="images/koszyczki/1.jpg" alt="Koszyczek 1">
+      <img src="images/koszyczki/2.jpg" alt="Koszyczek 2">
+      <img src="images/koszyczki/3.jpg" alt="Koszyczek 3">
+    </div>
+    <div class="personalizacja">
+      <p>Wybierz wzór: 1, 2 lub 3.</p>
+    </div>
+  </section>
 
-<section id="koszyczki">
-  <h2>Koszyczki ratunkowe</h2>
-  <div class="gallery">
-    <img src="images/koszyczki/1.jpg" alt="Koszyczek 1">
-    <img src="images/koszyczki/2.jpg" alt="Koszyczek 2">
-    <img src="images/koszyczki/3.jpg" alt="Koszyczek 3">
-  </div>
-  <form>
-    <h3>Personalizacja koszyczków</h3>
-    <label>Wybierz wzór:</label>
-    <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-    <button type="submit">Wyślij personalizację</button>
-  </form>
-</section>
+  <section>
+    <h2>Wieszaki dla Pary Młodej</h2>
+    <div class="gallery">
+      <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
+      <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
+      <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
+    </div>
+    <div class="personalizacja">
+      <p>Wybierz wzór: 1, 2 lub 3.</p>
+    </div>
+  </section>
 
-<section id="skrzynki">
-  <h2>Skrzynki na koperty</h2>
-  <div class="gallery">
-    <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
-    <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
-    <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
-  </div>
-  <form>
-    <h3>Personalizacja skrzynek</h3>
-    <label>Wybierz wzór:</label>
-    <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-    <button type="submit">Wyślij personalizację</button>
-  </form>
-</section>
-
-<section id="prezenty">
-  <h2>Prezenty dla rodziców</h2>
-  <div class="gallery">
-    <img src="images/prezenty/1.jpg" alt="Prezent 1">
-    <img src="images/prezenty/2.jpg" alt="Prezent 2">
-    <img src="images/prezenty/3.jpg" alt="Prezent 3">
-  </div>
-</section>
-
-<section id="kontakt" style="text-align: center;">
-  <h2>Kontakt</h2>
-  <p>Masz pytania? Napisz do mnie na <strong>kontakt@slubnamucha.pl</strong></p>
-</section>
-
-<footer>
-  <p>© 2025 Ślubna Mucha – Wszystkie prawa zastrzeżone.</p>
-</footer>
-
+  <section class="kontakt">
+    <h2>Kontakt</h2>
+    <p>Masz pytania? Skontaktuj się ze mną:</p>
+    <p><strong>Email:</strong> kontakt.slubnamucha@gmail.com</p>
+  </section>
 </body>
 </html>
 Aktualizacja strony z grafikami
@@ -237,3 +155,4 @@ Aktualizacja grafiki
 Aktualizacja grafiki2
 Dodano link do personalizacji
 Dodano grafikę
+Zmieniono adres e-mail
