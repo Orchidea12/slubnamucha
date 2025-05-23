@@ -33,8 +33,12 @@
       gap: 1rem;
       justify-content: center;
     }
-    .gallery img {
+    .gallery-item {
       width: 30%;
+      text-align: center;
+    }
+    .gallery img {
+      width: 100%;
       border-radius: 8px;
     }
     .personalizacja {
@@ -43,6 +47,10 @@
       background-color: #f8f4f0;
       border-radius: 8px;
     }
+    .personalizacja label {
+      display: block;
+      margin-top: 0.5rem;
+    }
     .kontakt {
       text-align: center;
       background-color: #f5ebe0;
@@ -50,6 +58,9 @@
     }
     .kontakt p {
       margin: 0.5rem 0;
+    }
+    select, input[type="checkbox"] {
+      margin-top: 0.3rem;
     }
   </style>
 </head>
@@ -62,84 +73,87 @@
   <section>
     <h2>Zaproszenia</h2>
     <div class="gallery">
-      <img src="images/zaproszenia/1.jpg" alt="Zaproszenie 1">
-      <img src="images/zaproszenia/2.jpg" alt="Zaproszenie 2">
-      <img src="images/zaproszenia/3.jpg" alt="Zaproszenie 3">
+      <!-- 5 zaproszeń -->
     </div>
     <div class="personalizacja">
-      <p>Wybierz wzór, kolor, tekst, kopertę, kalkę, wykończenie (lak, wstążka, kwiatek itp.).</p>
+      <h3>Personalizacja zaproszeń</h3>
+      <!-- Formularz personalizacji zaproszeń -->
     </div>
   </section>
 
   <section>
     <h2>Winietki</h2>
     <div class="gallery">
-      <img src="images/winietki/1.jpg" alt="Winietka 1">
-      <img src="images/winietki/2.jpg" alt="Winietka 2">
-      <img src="images/winietki/3.jpg" alt="Winietka 3">
+      <!-- 3 winietki -->
     </div>
     <div class="personalizacja">
-      <p>Personalizacja: wzór, font, kolor papieru, dodatki.</p>
+      <h3>Personalizacja winietek</h3>
+      <!-- Formularz personalizacji winietek -->
     </div>
   </section>
 
   <section>
     <h2>Zawieszki na alkohol</h2>
     <div class="gallery">
-      <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
-      <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
-      <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
+      <!-- 3 zawieszki -->
     </div>
     <div class="personalizacja">
-      <p>Wybierz styl, tekst, kolor, przewiązanie.</p>
+      <h3>Personalizacja zawieszek</h3>
+      <!-- Formularz personalizacji zawieszek -->
     </div>
   </section>
 
   <section>
-    <h2>Skrzynki na koperty</h2>
+    <h2>Wieszaki dla pary młodej</h2>
     <div class="gallery">
-      <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
-      <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
-      <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
+      <!-- 3 wieszaki -->
     </div>
     <div class="personalizacja">
-      <p>Wybierz wzór: 1, 2 lub 3.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Prezenty dla rodziców</h2>
-    <div class="gallery">
-      <img src="images/prezenty/1.jpg" alt="Prezent 1">
-      <img src="images/prezenty/2.jpg" alt="Prezent 2">
-      <img src="images/prezenty/3.jpg" alt="Prezent 3">
-    </div>
-    <div class="personalizacja">
-      <p>Wybierz wzór: 1, 2 lub 3.</p>
+      <h3>Personalizacja wieszaków</h3>
+      <!-- Formularz personalizacji wieszaków -->
     </div>
   </section>
 
   <section>
     <h2>Koszyczki ratunkowe</h2>
     <div class="gallery">
-      <img src="images/koszyczki/1.jpg" alt="Koszyczek 1">
-      <img src="images/koszyczki/2.jpg" alt="Koszyczek 2">
-      <img src="images/koszyczki/3.jpg" alt="Koszyczek 3">
+      <!-- 3 koszyczki -->
     </div>
     <div class="personalizacja">
-      <p>Wybierz wzór: 1, 2 lub 3.</p>
+      <h3>Personalizacja koszyczków</h3>
+      <!-- Formularz personalizacji koszyczków -->
     </div>
   </section>
 
   <section>
-    <h2>Wieszaki dla Pary Młodej</h2>
+    <h2>Skrzynki na koperty</h2>
     <div class="gallery">
-      <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
-      <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
-      <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
+      <!-- 3 skrzynki -->
     </div>
     <div class="personalizacja">
-      <p>Wybierz wzór: 1, 2 lub 3.</p>
+      <h3>Personalizacja skrzynek</h3>
+      <label for="skrzynka-wzor">Wybierz wzór:</label>
+      <select id="skrzynka-wzor">
+        <option>Wzór 1</option>
+        <option>Wzór 2</option>
+        <option>Wzór 3</option>
+      </select>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skrzynki na prezenty dla rodziców</h2>
+    <div class="gallery">
+      <!-- 3 skrzynki dla rodziców -->
+    </div>
+    <div class="personalizacja">
+      <h3>Personalizacja skrzynek dla rodziców</h3>
+      <label for="prezenty-wzor">Wybierz wzór:</label>
+      <select id="prezenty-wzor">
+        <option>Wzór 1</option>
+        <option>Wzór 2</option>
+        <option>Wzór 3</option>
+      </select>
     </div>
   </section>
 
@@ -156,3 +170,4 @@ Aktualizacja grafiki2
 Dodano link do personalizacji
 Dodano grafikę
 Zmieniono adres e-mail
+Dodano personalizację ponownie
