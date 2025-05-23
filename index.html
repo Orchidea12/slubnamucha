@@ -3,77 +3,160 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ślubna Mucha - Ozdoby ślubne</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ślubna Mucha – Ozdoby i dodatki ślubne</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff7f7; }
-    header, footer { background-color: #a14646; color: white; text-align: center; padding: 20px; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    section { padding: 40px; }
-    h2 { color: #a14646; }
-    img { max-width: 100%; height: auto; margin-top: 10px; border-radius: 10px; }
-    .product { margin-bottom: 40px; }
-    .personalizacja-link { display: block; margin-top: 20px; font-weight: bold; color: #a14646; text-decoration: underline; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      color: #333;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      background: #fff;
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #7e4a3b;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Ślubna Mucha</h1>
-    <nav>
-      <a href="#zaproszenia">Zaproszenia</a>
-      <a href="#winietki">Winietki</a>
-      <a href="#zawieszki">Zawieszki</a>
-      <a href="#wieszaki">Wieszaki</a>
-      <a href="#koszyczki">Koszyczki ratunkowe</a>
-      <a href="#skrzynki">Skrzynki na koperty</a>
-      <a href="#prezenty">Prezenty dla rodziców</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+    <p>Ozdoby i dodatki ślubne z personalizacją</p>
   </header>
+
+  <nav>
+    <a href="#zaproszenia">Zaproszenia</a>
+    <a href="#winietki">Winietki</a>
+    <a href="#zawieszki">Zawieszki</a>
+    <a href="#wieszaki">Wieszaki</a>
+    <a href="#koszyczki">Koszyczki</a>
+    <a href="#skrzynki">Skrzynki</a>
+    <a href="#prezenty">Prezenty</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 
   <section id="zaproszenia">
     <h2>Zaproszenia</h2>
-    <img src="images/zaproszenia.jpg" alt="Przykładowe zaproszenia" />
-    <p><a class="personalizacja-link" href="personalizacja.html">Stwórz własne zaproszenie</a></p>
+    <div class="gallery">
+      <img src="images/zaproszenia/1.jpg" alt="Zaproszenie 1">
+      <img src="images/zaproszenia/2.jpg" alt="Zaproszenie 2">
+      <img src="images/zaproszenia/3.jpg" alt="Zaproszenie 3">
+    </div>
   </section>
 
   <section id="winietki">
     <h2>Winietki</h2>
-    <img src="images/winietki.jpg" alt="Przykładowe winietki" />
+    <div class="gallery">
+      <img src="images/winietki/1.jpg" alt="Winietka 1">
+      <img src="images/winietki/2.jpg" alt="Winietka 2">
+      <img src="images/winietki/3.jpg" alt="Winietka 3">
+    </div>
   </section>
 
   <section id="zawieszki">
     <h2>Zawieszki na alkohol</h2>
-    <img src="images/zawieszki.jpg" alt="Zawieszki na butelki" />
+    <div class="gallery">
+      <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
+      <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
+      <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
+    </div>
   </section>
 
   <section id="wieszaki">
-    <h2>Wieszaki dla Pary Młodej</h2>
-    <img src="images/wieszaki.jpg" alt="Wieszaki ślubne" />
+    <h2>Wieszaki</h2>
+    <div class="gallery">
+      <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
+      <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
+      <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
+    </div>
   </section>
 
   <section id="koszyczki">
     <h2>Koszyczki ratunkowe</h2>
-    <img src="images/koszyczki.jpg" alt="Koszyczki ratunkowe" />
+    <div class="gallery">
+      <img src="images/koszyczki/1.jpg" alt="Koszyczek 1">
+      <img src="images/koszyczki/2.jpg" alt="Koszyczek 2">
+      <img src="images/koszyczki/3.jpg" alt="Koszyczek 3">
+    </div>
   </section>
 
   <section id="skrzynki">
     <h2>Skrzynki na koperty</h2>
-    <img src="images/skrzynki.jpg" alt="Skrzynki na koperty" />
+    <div class="gallery">
+      <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
+      <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
+      <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
+    </div>
   </section>
 
   <section id="prezenty">
     <h2>Prezenty dla rodziców</h2>
-    <img src="images/prezenty.jpg" alt="Prezenty ślubne" />
+    <div class="gallery">
+      <img src="images/prezenty/1.jpg" alt="Prezent 1">
+      <img src="images/prezenty/2.jpg" alt="Prezent 2">
+      <img src="images/prezenty/3.jpg" alt="Prezent 3">
+    </div>
   </section>
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Masz pytania lub chcesz złożyć zamówienie? Napisz do mnie na <strong>kontakt@slubnamucha.pl</strong></p>
+    <p style="text-align:center;">
+      Masz pytania lub chcesz zamówić personalizację?<br/>
+      Napisz do mnie: <strong>kontakt@slubnamucha.pl</strong><br/>
+      lub zadzwoń: <strong>+48 123 456 789</strong>
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Ślubna Mucha – Ręcznie robione dodatki ślubne</p>
+    &copy; 2025 Ślubna Mucha. Wszystkie prawa zastrzeżone.
   </footer>
 </body>
 </html>
