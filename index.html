@@ -68,7 +68,7 @@
       flex-direction: column;
       gap: 15px;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 30px auto 0 auto;
     }
     label {
       font-weight: bold;
@@ -107,7 +107,6 @@
     <a href="#koszyczki">Koszyczki</a>
     <a href="#skrzynki">Skrzynki</a>
     <a href="#prezenty">Prezenty</a>
-    <a href="#personalizacja">Personalizacja</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
 
@@ -118,6 +117,22 @@
       <img src="images/zaproszenia/2.jpg" alt="Zaproszenie 2">
       <img src="images/zaproszenia/3.jpg" alt="Zaproszenie 3">
     </div>
+    <form>
+      <h3>Personalizacja zaproszeń</h3>
+      <label>Wybierz wzór zaproszenia:</label>
+      <select><option>Rustykalne</option><option>Nowoczesne</option><option>Romantyczne</option></select>
+      <label>Kolor zaproszenia:</label>
+      <input type="text" placeholder="np. pudrowy róż, ecru">
+      <label>Tekst zaproszenia:</label>
+      <textarea rows="4" placeholder="Wpisz swój tekst..."></textarea>
+      <label>Dołącz kopertę?</label>
+      <select><option>Tak</option><option>Nie</option></select>
+      <label>Opcja zamknięcia:</label>
+      <select><option>Lak</option><option>Wstążka</option><option>Bez przewiązania</option></select>
+      <label>Dodatki:</label>
+      <input type="text" placeholder="np. kłos, kwiat, susz">
+      <button type="submit">Wyślij personalizację</button>
+    </form>
   </section>
 
   <section id="winietki">
@@ -125,20 +140,39 @@
     <div class="gallery">
       <img src="images/winietki/1.jpg" alt="Winietka 1">
       <img src="images/winietki/2.jpg" alt="Winietka 2">
+      <img src="images/winietki/3.jpg" alt="Winietka 3">
     </div>
+    <form>
+      <h3>Personalizacja winietek</h3>
+      <label>Wybierz styl winietki:</label>
+      <select><option>Eleganckie</option><option>Boho</option></select>
+      <label>Imiona gości:</label>
+      <textarea rows="4" placeholder="Wpisz imiona gości..."></textarea>
+      <button type="submit">Wyślij personalizację</button>
+    </form>
   </section>
 
   <section id="zawieszki">
     <h2>Zawieszki na alkohol</h2>
     <div class="gallery">
       <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
+      <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
+      <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
     </div>
+    <form>
+      <h3>Personalizacja zawieszek</h3>
+      <label>Tekst zawieszki:</label>
+      <textarea rows="3" placeholder="Wpisz tekst..."></textarea>
+      <button type="submit">Wyślij personalizację</button>
+    </form>
   </section>
 
   <section id="wieszaki">
     <h2>Wieszaki</h2>
     <div class="gallery">
       <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
+      <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
+      <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
     </div>
   </section>
 
@@ -146,6 +180,8 @@
     <h2>Koszyczki ratunkowe</h2>
     <div class="gallery">
       <img src="images/koszyczki/1.jpg" alt="Koszyczek 1">
+      <img src="images/koszyczki/2.jpg" alt="Koszyczek 2">
+      <img src="images/koszyczki/3.jpg" alt="Koszyczek 3">
     </div>
   </section>
 
@@ -153,6 +189,8 @@
     <h2>Skrzynki na koperty</h2>
     <div class="gallery">
       <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
+      <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
+      <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
     </div>
   </section>
 
@@ -160,48 +198,14 @@
     <h2>Prezenty dla rodziców</h2>
     <div class="gallery">
       <img src="images/prezenty/1.jpg" alt="Prezent 1">
+      <img src="images/prezenty/2.jpg" alt="Prezent 2">
+      <img src="images/prezenty/3.jpg" alt="Prezent 3">
     </div>
-  </section>
-
-  <section id="personalizacja">
-    <h2>Personalizacja zaproszenia</h2>
-    <form>
-      <label>Wybierz wzór zaproszenia:</label>
-      <select>
-        <option>Rustykalne</option>
-        <option>Nowoczesne</option>
-        <option>Romantyczne</option>
-      </select>
-
-      <label>Kolor zaproszenia:</label>
-      <input type="text" placeholder="np. pudrowy róż, ecru">
-
-      <label>Tekst zaproszenia:</label>
-      <textarea rows="4" placeholder="Wpisz swój tekst..."></textarea>
-
-      <label>Dołącz kopertę?</label>
-      <select>
-        <option>Tak</option>
-        <option>Nie</option>
-      </select>
-
-      <label>Opcja zamknięcia:</label>
-      <select>
-        <option>Lak</option>
-        <option>Wstążka</option>
-        <option>Bez przewiązania</option>
-      </select>
-
-      <label>Dodatki:</label>
-      <input type="text" placeholder="np. kłos, kwiat, susz">
-
-      <button type="submit">Wyślij personalizację</button>
-    </form>
   </section>
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Masz pytania? Napisz do mnie na <strong>kontakt@slubnamucha.pl</strong> lub zadzwoń: <strong>+48 123 456 789</strong></p>
+    <p>Masz pytania? Napisz do mnie na <strong>kontakt@slubnamucha.pl</strong></p>
   </section>
 
   <footer>
