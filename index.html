@@ -1,227 +1,323 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Ślubna Mucha</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Playfair Display', serif;
-            background-color: #fffaf5;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #f7e9e3, #fff0f5);
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 3em;
-            font-family: 'Great Vibes', cursive;
-        }
-        nav {
-            background-color: #fce4ec;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #6a1b9a;
-            font-weight: bold;
-        }
-        section {
-            padding: 30px;
-        }
-        h2 {
-            color: #d81b60;
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.5em;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .gallery img {
-            width: 250px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        form {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #fff0f5;
-            border-radius: 10px;
-        }
-        label, select, input, textarea {
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-        select, input, textarea {
-            padding: 8px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        footer {
-            background-color: #fce4ec;
-            text-align: center;
-            padding: 20px;
-        }
-        .contact {
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ślubna Mucha - Ozdoby i dodatki ślubne</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+  body {
+    font-family: 'Great Vibes', cursive, serif;
+    background: linear-gradient(135deg, #f7e9f0, #fff7f9);
+    margin: 0; padding: 20px;
+    color: #5a3e50;
+  }
+  h1, h2, h3 {
+    text-align: center;
+  }
+  section {
+    margin-bottom: 40px;
+    background: #fff0f5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #dcb8c9;
+  }
+  .products {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .product {
+    text-align: center;
+    width: 150px;
+  }
+  .product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #cda4b4;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  select, input[type="text"], textarea {
+    width: 100%;
+    padding: 6px 8px;
+    margin-top: 4px;
+    border: 1px solid #cca6b8;
+    border-radius: 6px;
+    font-family: inherit;
+  }
+  textarea {
+    resize: vertical;
+  }
+  input[type="submit"] {
+    margin-top: 15px;
+    background-color: #c97ba7;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Great Vibes', cursive, serif;
+  }
+  input[type="submit"]:hover {
+    background-color: #b06893;
+  }
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    color: #8a5d6a;
+  }
+  .contact {
+    text-align: center;
+    font-size: 1.1em;
+  }
+</style>
+<script>
+  function sendEmail(form) {
+    const subject = encodeURIComponent('Personalizacja zamówienia');
+    let body = '';
+    for (const element of form.elements) {
+      if (element.name && element.value) {
+        body += `${encodeURIComponent(element.name)}: ${encodeURIComponent(element.value)}%0D%0A`;
+      }
+    }
+    const mailtoLink = `mailto:kontakt.slubnamucha@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+    return false; // zapobiega standardowemu wysłaniu formularza
+  }
+</script>
 </head>
 <body>
-    <header>
-        <h1>Ślubna Mucha</h1>
-    </header>
+<h1>Ślubna Mucha - Ozdoby i dodatki ślubne</h1>
 
-    <nav>
-        <a href="#zaproszenia">Zaproszenia</a>
-        <a href="#winietki">Winietki</a>
-        <a href="#zawieszki">Zawieszki</a>
-        <a href="#wieszaki">Wieszaki</a>
-        <a href="#koszyki">Koszyki</a>
-        <a href="#skrzynki">Skrzynki</a>
-        <a href="#kontakt">Kontakt</a>
-    </nav>
+<section id="zaproszenia">
+  <h2>Zaproszenia</h2>
+  <div class="products">
+    <div class="product">
+      <div><strong>Wzór 1</strong></div>
+      <img src="images/zaproszenia/1.jpg" alt="Zaproszenie Wzór 1" />
+    </div>
+    <div class="product">
+      <div><strong>Wzór 2</strong></div>
+      <img src="images/zaproszenia/2.jpg" alt="Zaproszenie Wzór 2" />
+    </div>
+    <div class="product">
+      <div><strong>Wzór 3</strong></div>
+      <img src="images/zaproszenia/3.jpg" alt="Zaproszenie Wzór 3" />
+    </div>
+    <div class="product">
+      <div><strong>Wzór 4</strong></div>
+      <img src="images/zaproszenia/4.jpg" alt="Zaproszenie Wzór 4" />
+    </div>
+    <div class="product">
+      <div><strong>Wzór 5</strong></div>
+      <img src="images/zaproszenia/5.jpg" alt="Zaproszenie Wzór 5" />
+    </div>
+  </div>
+  <form onsubmit="return sendEmail(this);">
+    <label for="wzor-zap">Wybierz wzór zaproszenia:</label>
+    <select name="Wzór zaproszenia" id="wzor-zap" required>
+      <option value="Wzór 1">Wzór 1</option>
+      <option value="Wzór 2">Wzór 2</option>
+      <option value="Wzór 3">Wzór 3</option>
+      <option value="Wzór 4">Wzór 4</option>
+      <option value="Wzór 5">Wzór 5</option>
+    </select>
 
-    <section id="zaproszenia">
-        <h2>Zaproszenia</h2>
-        <div class="gallery">
-            <img src="images/zaproszenia/1.jpg" alt="Wzór 1">
-            <img src="images/zaproszenia/2.jpg" alt="Wzór 2">
-            <img src="images/zaproszenia/3.jpg" alt="Wzór 3">
-            <img src="images/zaproszenia/4.jpg" alt="Wzór 4">
-            <img src="images/zaproszenia/5.jpg" alt="Wzór 5">
-        </div>
-        <form>
-            <h3>Personalizacja zaproszeń</h3>
-            <label>Wybierz wzór:</label>
-            <select>
-                <option>Wzór 1</option>
-                <option>Wzór 2</option>
-                <option>Wzór 3</option>
-                <option>Wzór 4</option>
-                <option>Wzór 5</option>
-            </select>
-            <label>Wybierz tekst:</label>
-            <select><option>Tekst 1</option><option>Tekst 2</option></select>
-            <label>Rodzaj opakowania:</label>
-            <select><option>Koperta</option><option>Kalka</option></select>
-            <label>Rodzaj zamknięcia:</label>
-            <select><option>Lak</option><option>Wstążka</option></select>
-            <label>Rodzaj ozdoby:</label>
-            <select><option>Kłos</option><option>Kwiat</option><option>Liść</option></select>
-            <label>Dane:</label>
-            <textarea placeholder="Imiona, data, miejsce, kontakt..." rows="4"></textarea>
-            <label>Informacja o noclegu?</label>
-            <select><option>Tak</option><option>Nie</option></select>
-            <label>Informacja o prezentach?</label>
-            <select><option>Tak</option><option>Nie</option></select>
-            <label>Czy cytat o miłości?</label>
-            <select><option>Tak</option><option>Nie</option></select>
-        </form>
-    </section>
+    <label for="tekst-zap">Wybierz tekst:</label>
+    <select name="Tekst zaproszenia" id="tekst-zap" required>
+      <option value="Tekst 1">Tekst 1</option>
+      <option value="Tekst 2">Tekst 2</option>
+      <option value="Tekst 3">Tekst 3</option>
+    </select>
 
-    <section id="winietki">
-        <h2>Winietki</h2>
-        <div class="gallery">
-            <img src="images/winietki/1.jpg" alt="Winietka 1">
-            <img src="images/winietki/2.jpg" alt="Winietka 2">
-            <img src="images/winietki/3.jpg" alt="Winietka 3">
-        </div>
-        <form>
-            <h3>Personalizacja winietek</h3>
-            <label>Wybierz wzór:</label>
-            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-        </form>
-    </section>
+    <label for="opakowanie-zap">Wybierz rodzaj opakowania:</label>
+    <select name="Rodzaj opakowania" id="opakowanie-zap" required>
+      <option value="Koperta">Koperta</option>
+      <option value="Kalka">Kalka</option>
+    </select>
 
-    <section id="zawieszki">
-        <h2>Zawieszki na alkohol</h2>
-        <div class="gallery">
-            <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
-            <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
-            <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
-        </div>
-        <form>
-            <h3>Personalizacja zawieszek</h3>
-            <label>Wybierz wzór:</label>
-            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-        </form>
-    </section>
+    <label for="zamkniecie-zap">Rodzaj zamknięcia:</label>
+    <select name="Rodzaj zamknięcia" id="zamkniecie-zap" required>
+      <option value="Lak">Lak</option>
+      <option value="Wstążka">Wstążka</option>
+    </select>
 
-    <section id="wieszaki">
-        <h2>Wieszaki</h2>
-        <div class="gallery">
-            <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
-            <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
-            <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
-        </div>
-        <form>
-            <h3>Personalizacja wieszaków</h3>
-            <label>Wybierz wzór:</label>
-            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-        </form>
-    </section>
+    <label for="ozdoba-zap">Rodzaj ozdoby:</label>
+    <select name="Rodzaj ozdoby" id="ozdoba-zap" required>
+      <option value="Kłos">Kłos</option>
+      <option value="Kwiat">Kwiat</option>
+      <option value="Liść">Liść</option>
+    </select>
 
-    <section id="koszyki">
-        <h2>Koszyczki ratunkowe</h2>
-        <div class="gallery">
-            <img src="images/koszyki/1.jpg" alt="Koszyk 1">
-            <img src="images/koszyki/2.jpg" alt="Koszyk 2">
-            <img src="images/koszyki/3.jpg" alt="Koszyk 3">
-        </div>
-        <form>
-            <h3>Personalizacja koszyków</h3>
-            <label>Wybierz wzór:</label>
-            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-        </form>
-    </section>
+    <label for="dane-osobowe-zap">Podaj imiona lub imiona i nazwiska, miejsce i datę przyjęcia oraz numery kontaktowe:</label>
+    <textarea name="Dane osobowe" id="dane-osobowe-zap" rows="4" required></textarea>
 
-    <section id="skrzynki">
-        <h2>Skrzynki</h2>
-        <div class="gallery">
-            <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
-            <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
-            <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
-        </div>
-        <form>
-            <h3>Personalizacja skrzynek</h3>
-            <label>Wybierz wzór:</label>
-            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
-        </form>
-    </section>
+    <label for="info-nocleg-zap">Czy informacja o noclegu ma się znaleźć na zaproszeniu?</label>
+    <select name="Informacja o noclegu" id="info-nocleg-zap" required>
+      <option value="Tak">Tak</option>
+      <option value="Nie">Nie</option>
+    </select>
 
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <div class="contact">
-            <p>Masz pytania? Skontaktuj się z nami!</p>
-            <p>Email: kontakt.slubnamucha@gmail.com</p>
-        </div>
-    </section>
+    <label for="info-prezenty-zap">Czy informacja o rodzaju prezentów ma się znaleźć na zaproszeniu?</label>
+    <select name="Informacja o prezentach" id="info-prezenty-zap" required>
+      <option value="Tak">Tak</option>
+      <option value="Nie">Nie</option>
+    </select>
 
-    <footer>
-        <p>&copy; 2025 Ślubna Mucha</p>
-    </footer>
-</body>
-</html>
-Aktualizacja strony z grafikami
-Aktualizacja grafiki
-Aktualizacja grafiki2
-Dodano link do personalizacji
-Dodano grafikę
-Zmieniono adres e-mail
-Dodano personalizację ponownie
-Dodano zdjęcia i formularze
+    <label for="info-cytat-zap">Czy na zaproszeniu ma się pojawić cytat o miłości?</label>
+    <select name="Cytat o miłości" id="info-cytat-zap" required>
+      <option value="Tak">Tak</option>
+      <option value="Nie">Nie</option>
+    </select>
+
+    <input type="submit" value="Wyślij personalizację" />
+  </form>
+</section>
+
+<section id="winietki">
+  <h2>Winietki</h2>
+  <div class="products">
+    <div class="product">
+      <img src="images/winietki/1.jpg" alt="Winietka 1" />
+    </div>
+    <div class="product">
+      <img src="images/winietki/2.jpg" alt="Winietka 2" />
+    </div>
+    <div class="product">
+      <img src="images/winietki/3.jpg" alt="Winietka 3" />
+    </div>
+  </div>
+  <form onsubmit="return sendEmail(this);">
+    <label for="wzor-winietka">Wybierz wzór winietki:</label>
+    <select name="Wzór winietki" id="wzor-winietka" required>
+      <option value="Wzór 1">Wzór 1</option>
+      <option value="Wzór 2">Wzór 2</option>
+      <option value="Wzór 3">Wzór 3</option>
+    </select>
+
+    <label for="tekst-winietka">Wpisz tekst na winietkę:</label>
+    <textarea name="Tekst winietki" id="tekst-winietka" rows="2" required></textarea>
+
+    <input type="submit" value="Wyślij personalizację" />
+  </form>
+</section>
+
+<section id="zawieszki">
+  <h2>Zawieszki na alkohol</h2>
+  <div class="products">
+    <div class="product">
+      <img src="images/zawieszki/1.jpg" alt="Zawieszka 1" />
+    </div>
+    <div class="product">
+      <img src="images/zawieszki/2.jpg" alt="Zawieszka 2" />
+    </div>
+    <div class="product">
+      <img src="images/zawieszki/3.jpg" alt="Zawieszka 3" />
+    </div>
+  </div>
+  <form onsubmit="return sendEmail(this);">
+    <label for="wzor-zawieszka">Wybierz wzór zawieszki:</label>
+    <select name="Wzór zawieszki" id="wzor-zawieszka" required>
+      <option value="Wzór 1">Wzór 1</option>
+      <option value="Wzór 2">Wzór 2</option>
+      <option value="Wzór 3">Wzór 3</option>
+    </select>
+
+    <label for="tekst-zawieszka">Wpisz tekst na zawieszkę:</label>
+    <textarea name="Tekst zawieszki" id="tekst-zawieszka" rows="2" required></textarea>
+
+    <input type="submit" value="Wyślij personalizację" />
+  </form>
+</section>
+
+<section id="wieszaki">
+  <h2>Wieszaki dla Pana Młodego i Panny Młodej</h2>
+  <div class="products">
+    <div class="product">
+      <img src="images/wieszaki/1.jpg" alt="Wieszak 1" />
+    </div>
+    <div class="product">
+      <img src="images/wieszaki/2.jpg" alt="Wieszak 2" />
+    </div>
+    <div class="product">
+      <img src="images/wieszaki/3.jpg" alt="Wieszak 3" />
+    </div>
+  </div>
+  <form onsubmit="return sendEmail(this);">
+    <label for="wzor-wieszak">Wybierz wzór wieszaka:</label>
+    <select name="Wzór wieszaka" id="wzor-wieszak" required>
+      <option value="Wzór 1">Wzór 1</option>
+      <option value="Wzór 2">Wzór 2</option>
+      <option value="Wzór 3">Wzór 3</option>
+    </select>
+
+    <input type="submit" value="Wyślij personalizację" />
+  </form>
+</section>
+
+<section id="koszyczki">
+  <h2>Koszyczki ratunkowe</h2>
+  <div class="products">
+    <div class="product">
+      <img src="images/koszyczki/1.jpg" alt="Koszyczek 1" />
+    </div>
+    <div class="product">
+      <img src="images/koszyczki/2.jpg" alt="Koszyczek 2" />
+    </div>
+    <div class="product">
+      <img src="images/koszyczki/3.jpg" alt="Koszyczek 3" />
+    </div>
+  </div>
+  <form onsubmit="return sendEmail(this);">
+    <label for="wzor-koszyczek">Wybierz wzór koszyczka:</label>
+    <select name="Wzór koszyczka" id="wzor-koszyczek" required>
+      <option value="Wzór 1">Wzór 1</option>
+      <option value="Wzór 2">Wzór 2</option>
+      <option value="Wzór 3">Wzór 3</option>
+    </select>
+
+    <input type="submit" value="Wyślij personalizację" />
+  </form>
+</section>
+
+<section id="skrzynki-koperty">
+  <h2>Skrzynki na koperty</h2>
+  <div class="products">
+    <div class="product">
+      <img src="images/skrzynki/1.jpg" alt="Skrzynka na koperty 1" />
+    </div>
+    <div class="product">
+      <img src="images/skrzynki/2.jpg" alt="Skrzynka na koperty 2" />
+    </div>
+    <div class="product">
+      <img src="images/skrzynki/3.jpg" alt="Skrzynka na koperty 3" />
+    </div>
+  </div>
+  <form onsubmit="return sendEmail(this);">
+    <label for="wzor-skrzynka">Wybierz wzór skrzynki:</label>
+    <select name="Wzór skrzynki" id="wzor-skrzynka" required>
+      <option value="Wzór 1">Wzór 1</option>
+      <option value="Wzór 2">Wzór 2</option>
+      <option value="Wzór 3">Wzór 3</option>
+    </select>
+
+    <input type
+
+
+
+
+
+ChatGPT powiedział:
+="submit" value="Wyślij personalizację" />
+
+</form> </section> <footer> <div class="contact">Masz pytania? Napisz do nas: <a href="mailto:kontakt.slubnamucha@gmail.com">kontakt.slubnamucha@gmail.com</a></div> <p>&copy; 2025 Ślubna Mucha</p> </footer> </body> </html>
