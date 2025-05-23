@@ -58,6 +58,27 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 8px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px;
+      background-color: #7e4a3b;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -80,9 +101,11 @@
     <a href="#koszyczki">Koszyczki</a>
     <a href="#skrzynki">Skrzynki</a>
     <a href="#prezenty">Prezenty</a>
+    <a href="#personalizacja">Personalizacja</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
 
+  <!-- Galeria zdjęć -->
   <section id="zaproszenia">
     <h2>Zaproszenia</h2>
     <div class="gallery">
@@ -146,6 +169,50 @@
     </div>
   </section>
 
+  <!-- Personalizacja -->
+  <section id="personalizacja">
+    <h2>Personalizacja zaproszenia</h2>
+    <form>
+      <label for="wzor">Wybierz wzór zaproszenia:</label>
+      <select id="wzor" name="wzor">
+        <option>Rustykalny</option>
+        <option>Elegancki</option>
+        <option>Nowoczesny</option>
+      </select>
+
+      <label for="kolor">Kolor zaproszenia:</label>
+      <input type="text" id="kolor" name="kolor" placeholder="np. beżowy, biały, złoty"/>
+
+      <label for="tekst">Tekst zaproszenia:</label>
+      <textarea id="tekst" name="tekst" rows="4"></textarea>
+
+      <label for="koperta">Czy ma być koperta?</label>
+      <select id="koperta" name="koperta">
+        <option>Tak</option>
+        <option>Nie</option>
+      </select>
+
+      <label for="kalka">Czy ma być kalka?</label>
+      <select id="kalka" name="kalka">
+        <option>Tak</option>
+        <option>Nie</option>
+      </select>
+
+      <label for="zaklejenie">Zaklejenie:</label>
+      <select id="zaklejenie" name="zaklejenie">
+        <option>Lak</option>
+        <option>Wstążka</option>
+        <option>Bez zaklejenia</option>
+      </select>
+
+      <label for="ozdoba">Dodatkowa ozdoba (np. kłos, kwiatek):</label>
+      <input type="text" id="ozdoba" name="ozdoba"/>
+
+      <button type="submit">Wyślij personalizację</button>
+    </form>
+  </section>
+
+  <!-- Kontakt -->
   <section id="kontakt">
     <h2>Kontakt</h2>
     <p style="text-align:center;">
