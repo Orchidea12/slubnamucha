@@ -73,67 +73,106 @@
   <section>
     <h2>Zaproszenia</h2>
     <div class="gallery">
-      <!-- 5 zaproszeń -->
+      <div class="gallery-item"><img src="images/zaproszenia/1.jpg" alt="Wzór 1"><p>Wzór 1</p></div>
+      <div class="gallery-item"><img src="images/zaproszenia/2.jpg" alt="Wzór 2"><p>Wzór 2</p></div>
+      <div class="gallery-item"><img src="images/zaproszenia/3.jpg" alt="Wzór 3"><p>Wzór 3</p></div>
+      <div class="gallery-item"><img src="images/zaproszenia/4.jpg" alt="Wzór 4"><p>Wzór 4</p></div>
+      <div class="gallery-item"><img src="images/zaproszenia/5.jpg" alt="Wzór 5"><p>Wzór 5</p></div>
     </div>
     <div class="personalizacja">
       <h3>Personalizacja zaproszeń</h3>
-      <!-- Formularz personalizacji zaproszeń -->
+      <label for="wzor">Wybierz wzór:</label>
+      <select id="wzor">
+        <option>Wzór 1</option>
+        <option>Wzór 2</option>
+        <option>Wzór 3</option>
+        <option>Wzór 4</option>
+        <option>Wzór 5</option>
+      </select>
+      <label for="tekst">Wybierz tekst:</label>
+      <select id="tekst">
+        <option>Tekst 1</option>
+        <option>Tekst 2</option>
+      </select>
+      <label><input type="checkbox"> Koperta</label>
+      <label><input type="checkbox"> Kalka</label>
+      <label><input type="checkbox"> Lak</label>
+      <label><input type="checkbox"> Wstążka</label>
+      <label><input type="checkbox"> Kłos/Kwiat</label>
     </div>
   </section>
 
   <section>
     <h2>Winietki</h2>
     <div class="gallery">
-      <!-- 3 winietki -->
+      <div class="gallery-item"><img src="images/winietki/1.jpg" alt="Winietka 1"></div>
+      <div class="gallery-item"><img src="images/winietki/2.jpg" alt="Winietka 2"></div>
+      <div class="gallery-item"><img src="images/winietki/3.jpg" alt="Winietka 3"></div>
     </div>
     <div class="personalizacja">
       <h3>Personalizacja winietek</h3>
-      <!-- Formularz personalizacji winietek -->
+      <label for="czcionka-winietki">Wybierz czcionkę:</label>
+      <select id="czcionka-winietki">
+        <option>Nowoczesna</option>
+        <option>Klasyczna</option>
+        <option>Odręczna</option>
+      </select>
     </div>
   </section>
 
   <section>
     <h2>Zawieszki na alkohol</h2>
     <div class="gallery">
-      <!-- 3 zawieszki -->
+      <div class="gallery-item"><img src="images/zawieszki/1.jpg" alt="Zawieszka 1"></div>
+      <div class="gallery-item"><img src="images/zawieszki/2.jpg" alt="Zawieszka 2"></div>
+      <div class="gallery-item"><img src="images/zawieszki/3.jpg" alt="Zawieszka 3"></div>
     </div>
     <div class="personalizacja">
       <h3>Personalizacja zawieszek</h3>
-      <!-- Formularz personalizacji zawieszek -->
+      <label for="tekst-zawieszki">Wpisz tekst:</label>
+      <input type="text" id="tekst-zawieszki" placeholder="Na zdrowie!">
     </div>
   </section>
 
   <section>
     <h2>Wieszaki dla pary młodej</h2>
     <div class="gallery">
-      <!-- 3 wieszaki -->
+      <div class="gallery-item"><img src="images/wieszaki/1.jpg" alt="Wieszak 1"></div>
+      <div class="gallery-item"><img src="images/wieszaki/2.jpg" alt="Wieszak 2"></div>
+      <div class="gallery-item"><img src="images/wieszaki/3.jpg" alt="Wieszak 3"></div>
     </div>
     <div class="personalizacja">
       <h3>Personalizacja wieszaków</h3>
-      <!-- Formularz personalizacji wieszaków -->
+      <label for="tekst-wieszaka">Imiona lub data:</label>
+      <input type="text" id="tekst-wieszaka">
     </div>
   </section>
 
   <section>
     <h2>Koszyczki ratunkowe</h2>
     <div class="gallery">
-      <!-- 3 koszyczki -->
+      <div class="gallery-item"><img src="images/koszyczki/1.jpg" alt="Koszyczek 1"></div>
+      <div class="gallery-item"><img src="images/koszyczki/2.jpg" alt="Koszyczek 2"></div>
+      <div class="gallery-item"><img src="images/koszyczki/3.jpg" alt="Koszyczek 3"></div>
     </div>
     <div class="personalizacja">
       <h3>Personalizacja koszyczków</h3>
-      <!-- Formularz personalizacji koszyczków -->
+      <label for="etykieta-koszyczka">Tekst na etykiecie:</label>
+      <input type="text" id="etykieta-koszyczka">
     </div>
   </section>
 
   <section>
     <h2>Skrzynki na koperty</h2>
     <div class="gallery">
-      <!-- 3 skrzynki -->
+      <div class="gallery-item"><img src="images/skrzynki/1.jpg" alt="Skrzynka 1"></div>
+      <div class="gallery-item"><img src="images/skrzynki/2.jpg" alt="Skrzynka 2"></div>
+      <div class="gallery-item"><img src="images/skrzynki/3.jpg" alt="Skrzynka 3"></div>
     </div>
     <div class="personalizacja">
       <h3>Personalizacja skrzynek</h3>
-      <label for="skrzynka-wzor">Wybierz wzór:</label>
-      <select id="skrzynka-wzor">
+      <label for="wzor-skrzynki">Wybierz wzór:</label>
+      <select id="wzor-skrzynki">
         <option>Wzór 1</option>
         <option>Wzór 2</option>
         <option>Wzór 3</option>
@@ -144,12 +183,14 @@
   <section>
     <h2>Skrzynki na prezenty dla rodziców</h2>
     <div class="gallery">
-      <!-- 3 skrzynki dla rodziców -->
+      <div class="gallery-item"><img src="images/prezenty/1.jpg" alt="Prezent 1"></div>
+      <div class="gallery-item"><img src="images/prezenty/2.jpg" alt="Prezent 2"></div>
+      <div class="gallery-item"><img src="images/prezenty/3.jpg" alt="Prezent 3"></div>
     </div>
     <div class="personalizacja">
-      <h3>Personalizacja skrzynek dla rodziców</h3>
-      <label for="prezenty-wzor">Wybierz wzór:</label>
-      <select id="prezenty-wzor">
+      <h3>Personalizacja prezentów</h3>
+      <label for="wzor-prezentu">Wybierz wzór:</label>
+      <select id="wzor-prezentu">
         <option>Wzór 1</option>
         <option>Wzór 2</option>
         <option>Wzór 3</option>
@@ -171,3 +212,4 @@ Dodano link do personalizacji
 Dodano grafikę
 Zmieniono adres e-mail
 Dodano personalizację ponownie
+Dodano zdjęcia i formularze
