@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Ślubna Mucha</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Playfair Display', serif;
@@ -21,7 +21,8 @@
         }
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            font-family: 'Great Vibes', cursive;
         }
         nav {
             background-color: #fce4ec;
@@ -39,14 +40,17 @@
         }
         h2 {
             color: #d81b60;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 20px;
+            justify-content: center;
         }
         .gallery img {
-            width: 30%;
+            width: 250px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -92,9 +96,6 @@
         <a href="#kontakt">Kontakt</a>
     </nav>
 
-    <!-- WZORZEC SEKCJI PRODUKTU -->
-    <!-- Skopiuj i dostosuj poniższy kod dla każdego produktu -->
-
     <section id="zaproszenia">
         <h2>Zaproszenia</h2>
         <div class="gallery">
@@ -133,107 +134,87 @@
         </form>
     </section>
 
-  <section>
-    <h2>Winietki</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/winietki/1.jpg" alt="Winietka 1"></div>
-      <div class="gallery-item"><img src="images/winietki/2.jpg" alt="Winietka 2"></div>
-      <div class="gallery-item"><img src="images/winietki/3.jpg" alt="Winietka 3"></div>
-    </div>
-    <div class="personalizacja">
-      <h3>Personalizacja winietek</h3>
-      <label for="czcionka-winietki">Wybierz czcionkę:</label>
-      <select id="czcionka-winietki">
-        <option>Nowoczesna</option>
-        <option>Klasyczna</option>
-        <option>Odręczna</option>
-      </select>
-    </div>
-  </section>
+    <section id="winietki">
+        <h2>Winietki</h2>
+        <div class="gallery">
+            <img src="images/winietki/1.jpg" alt="Winietka 1">
+            <img src="images/winietki/2.jpg" alt="Winietka 2">
+            <img src="images/winietki/3.jpg" alt="Winietka 3">
+        </div>
+        <form>
+            <h3>Personalizacja winietek</h3>
+            <label>Wybierz wzór:</label>
+            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
+        </form>
+    </section>
 
-  <section>
-    <h2>Zawieszki na alkohol</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/zawieszki/1.jpg" alt="Zawieszka 1"></div>
-      <div class="gallery-item"><img src="images/zawieszki/2.jpg" alt="Zawieszka 2"></div>
-      <div class="gallery-item"><img src="images/zawieszki/3.jpg" alt="Zawieszka 3"></div>
-    </div>
-    <div class="personalizacja">
-      <h3>Personalizacja zawieszek</h3>
-      <label for="tekst-zawieszki">Wpisz tekst:</label>
-      <input type="text" id="tekst-zawieszki" placeholder="Na zdrowie!">
-    </div>
-  </section>
+    <section id="zawieszki">
+        <h2>Zawieszki na alkohol</h2>
+        <div class="gallery">
+            <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
+            <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
+            <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
+        </div>
+        <form>
+            <h3>Personalizacja zawieszek</h3>
+            <label>Wybierz wzór:</label>
+            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
+        </form>
+    </section>
 
-  <section>
-    <h2>Wieszaki dla pary młodej</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/wieszaki/1.jpg" alt="Wieszak 1"></div>
-      <div class="gallery-item"><img src="images/wieszaki/2.jpg" alt="Wieszak 2"></div>
-      <div class="gallery-item"><img src="images/wieszaki/3.jpg" alt="Wieszak 3"></div>
-    </div>
-    <div class="personalizacja">
-      <h3>Personalizacja wieszaków</h3>
-      <label for="tekst-wieszaka">Imiona lub data:</label>
-      <input type="text" id="tekst-wieszaka">
-    </div>
-  </section>
+    <section id="wieszaki">
+        <h2>Wieszaki</h2>
+        <div class="gallery">
+            <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
+            <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
+            <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
+        </div>
+        <form>
+            <h3>Personalizacja wieszaków</h3>
+            <label>Wybierz wzór:</label>
+            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
+        </form>
+    </section>
 
-  <section>
-    <h2>Koszyczki ratunkowe</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/koszyczki/1.jpg" alt="Koszyczek 1"></div>
-      <div class="gallery-item"><img src="images/koszyczki/2.jpg" alt="Koszyczek 2"></div>
-      <div class="gallery-item"><img src="images/koszyczki/3.jpg" alt="Koszyczek 3"></div>
-    </div>
-    <div class="personalizacja">
-      <h3>Personalizacja koszyczków</h3>
-      <label for="etykieta-koszyczka">Tekst na etykiecie:</label>
-      <input type="text" id="etykieta-koszyczka">
-    </div>
-  </section>
+    <section id="koszyki">
+        <h2>Koszyczki ratunkowe</h2>
+        <div class="gallery">
+            <img src="images/koszyki/1.jpg" alt="Koszyk 1">
+            <img src="images/koszyki/2.jpg" alt="Koszyk 2">
+            <img src="images/koszyki/3.jpg" alt="Koszyk 3">
+        </div>
+        <form>
+            <h3>Personalizacja koszyków</h3>
+            <label>Wybierz wzór:</label>
+            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
+        </form>
+    </section>
 
-  <section>
-    <h2>Skrzynki na koperty</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/skrzynki/1.jpg" alt="Skrzynka 1"></div>
-      <div class="gallery-item"><img src="images/skrzynki/2.jpg" alt="Skrzynka 2"></div>
-      <div class="gallery-item"><img src="images/skrzynki/3.jpg" alt="Skrzynka 3"></div>
-    </div>
-    <div class="personalizacja">
-      <h3>Personalizacja skrzynek</h3>
-      <label for="wzor-skrzynki">Wybierz wzór:</label>
-      <select id="wzor-skrzynki">
-        <option>Wzór 1</option>
-        <option>Wzór 2</option>
-        <option>Wzór 3</option>
-      </select>
-    </div>
-  </section>
+    <section id="skrzynki">
+        <h2>Skrzynki</h2>
+        <div class="gallery">
+            <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
+            <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
+            <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
+        </div>
+        <form>
+            <h3>Personalizacja skrzynek</h3>
+            <label>Wybierz wzór:</label>
+            <select><option>Wzór 1</option><option>Wzór 2</option><option>Wzór 3</option></select>
+        </form>
+    </section>
 
-  <section>
-    <h2>Skrzynki na prezenty dla rodziców</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/prezenty/1.jpg" alt="Prezent 1"></div>
-      <div class="gallery-item"><img src="images/prezenty/2.jpg" alt="Prezent 2"></div>
-      <div class="gallery-item"><img src="images/prezenty/3.jpg" alt="Prezent 3"></div>
-    </div>
-    <div class="personalizacja">
-      <h3>Personalizacja prezentów</h3>
-      <label for="wzor-prezentu">Wybierz wzór:</label>
-      <select id="wzor-prezentu">
-        <option>Wzór 1</option>
-        <option>Wzór 2</option>
-        <option>Wzór 3</option>
-      </select>
-    </div>
-  </section>
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="contact">
+            <p>Masz pytania? Skontaktuj się z nami!</p>
+            <p>Email: kontakt.slubnamucha@gmail.com</p>
+        </div>
+    </section>
 
-  <section class="kontakt">
-    <h2>Kontakt</h2>
-    <p>Masz pytania? Skontaktuj się ze mną:</p>
-    <p><strong>Email:</strong> kontakt.slubnamucha@gmail.com</p>
-  </section>
+    <footer>
+        <p>&copy; 2025 Ślubna Mucha</p>
+    </footer>
 </body>
 </html>
 Aktualizacja strony z grafikami
