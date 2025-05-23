@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalizacja Zaproszenia</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff7f7; padding: 40px; color: #333; }
+    h1 { color: #a14646; }
+    label { display: block; margin: 15px 0 5px; }
+    select, input[type="text"], textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    textarea { height: 100px; }
+    button { margin-top: 20px; padding: 10px 20px; background-color: #a14646; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    .summary { margin-top: 30px; background: #fbe9e9; padding: 20px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Stwórz własne zaproszenie ślubne</h1>
+
+  <form id="customForm">
+    <label for="wzor">Wzór zaproszenia:</label>
+    <select id="wzor" name="wzor">
+      <option value="Kwiatowy">Kwiatowy</option>
+      <option value="Rustykalny">Rustykalny</option>
+      <option value="Nowoczesny">Nowoczesny</option>
+    </select>
+
+    <label for="kolor">Kolor zaproszenia:</label>
+    <select id="kolor" name="kolor">
+      <option value="Beżowy">Beżowy</option>
+      <option value="Biały">Biały</option>
+      <option value="Granatowy">Granatowy</option>
+    </select>
+
+    <label for="tekst">Tekst zaproszenia:</label>
+    <textarea id="tekst" name="tekst" placeholder="Wpisz treść zaproszenia..."></textarea>
+
+    <label for="koperta">Koperta:</label>
+    <select id="koperta" name="koperta">
+      <option value="Tak">Tak</option>
+      <option value="Nie">Nie</option>
+    </select>
+
+    <label for="kalka">Kalka:</label>
+    <select id="kalka" name="kalka">
+      <option value="Tak">Tak</option>
+      <option value="Nie">Nie</option>
+    </select>
+
+    <label for="zaklejenie">Zaklejenie:</label>
+    <select id="zaklejenie" name="zaklejenie">
+      <option value="Lak">Lak</option>
+      <option value="Wstążka">Wstążka</option>
+      <option value="Bez zaklejenia">Bez zaklejenia</option>
+    </select>
+
+    <label for="dekoracja">Dodatkowa dekoracja:</label>
+    <select id="dekoracja" name="dekoracja">
+      <option value="Kłos">Kłos</option>
+      <option value="Suszony kwiatek">Suszony kwiatek</option>
+      <option value="Bez dekoracji">Bez dekoracji</option>
+    </select>
+
+    <button type="button" onclick="pokazPodsumowanie()">Zobacz podsumowanie</button>
+  </form>
+
+  <div class="summary" id="podsumowanie" style="display:none;"></div>
+
+  <script>
+    function pokazPodsumowanie() {
+      const form = document.forms['customForm'];
+      const podsumowanie = document.getElementById('podsumowanie');
+      podsumowanie.innerHTML = `
+        <h2>Twoje zaproszenie:</h2>
+        <p><strong>Wzór:</strong> ${form.wzor.value}</p>
+        <p><strong>Kolor:</strong> ${form.kolor.value}</p>
+        <p><strong>Tekst:</strong> ${form.tekst.value}</p>
+        <p><strong>Koperta:</strong> ${form.koperta.value}</p>
+        <p><strong>Kalka:</strong> ${form.kalka.value}</p>
+        <p><strong>Zaklejenie:</strong> ${form.zaklejenie.value}</p>
+        <p><strong>Dekoracja:</strong> ${form.dekoracja.value}</p>
+        <p>To zaproszenie możesz zamówić, kontaktując się z nami przez e-mail: <strong>kontakt@slubnamucha.pl</strong>.</p>
+      `;
+      podsumowanie.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+Dodano stronę do personalizacji zaproszeń
