@@ -2,105 +2,136 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ślubna Mucha - Ozdoby ślubne</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-    }
-    header {
-      background: linear-gradient(135deg, #e3d5ca, #f5ebe0);
-      color: #5a3e36;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .gallery-item {
-      width: 30%;
-      text-align: center;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .personalizacja {
-      margin-top: 1rem;
-      padding: 1rem;
-      background-color: #f8f4f0;
-      border-radius: 8px;
-    }
-    .personalizacja label {
-      display: block;
-      margin-top: 0.5rem;
-    }
-    .kontakt {
-      text-align: center;
-      background-color: #f5ebe0;
-      padding: 2rem 1rem;
-    }
-    .kontakt p {
-      margin: 0.5rem 0;
-    }
-    select, input[type="checkbox"] {
-      margin-top: 0.3rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ślubna Mucha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #fffaf5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #f7e9e3, #fff0f5);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #fce4ec;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6a1b9a;
+            font-weight: bold;
+        }
+        section {
+            padding: 30px;
+        }
+        h2 {
+            color: #d81b60;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        form {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff0f5;
+            border-radius: 10px;
+        }
+        label, select, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        select, input, textarea {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #fce4ec;
+            text-align: center;
+            padding: 20px;
+        }
+        .contact {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Ślubna Mucha</h1>
-    <p>Ozdoby i dodatki ślubne personalizowane z pasją</p>
-  </header>
+    <header>
+        <h1>Ślubna Mucha</h1>
+    </header>
 
-  <section>
-    <h2>Zaproszenia</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/zaproszenia/1.jpg" alt="Wzór 1"><p>Wzór 1</p></div>
-      <div class="gallery-item"><img src="images/zaproszenia/2.jpg" alt="Wzór 2"><p>Wzór 2</p></div>
-      <div class="gallery-item"><img src="images/zaproszenia/3.jpg" alt="Wzór 3"><p>Wzór 3</p></div>
-      <div class="gallery-item"><img src="images/zaproszenia/4.jpg" alt="Wzór 4"><p>Wzór 4</p></div>
-      <div class="gallery-item"><img src="images/zaproszenia/5.jpg" alt="Wzór 5"><p>Wzór 5</p></div>
-    </div>
-    <div class="personalizacja">
-      <h3>Personalizacja zaproszeń</h3>
-      <label for="wzor">Wybierz wzór:</label>
-      <select id="wzor">
-        <option>Wzór 1</option>
-        <option>Wzór 2</option>
-        <option>Wzór 3</option>
-        <option>Wzór 4</option>
-        <option>Wzór 5</option>
-      </select>
-      <label for="tekst">Wybierz tekst:</label>
-      <select id="tekst">
-        <option>Tekst 1</option>
-        <option>Tekst 2</option>
-      </select>
-      <label><input type="checkbox"> Koperta</label>
-      <label><input type="checkbox"> Kalka</label>
-      <label><input type="checkbox"> Lak</label>
-      <label><input type="checkbox"> Wstążka</label>
-      <label><input type="checkbox"> Kłos/Kwiat</label>
-    </div>
-  </section>
+    <nav>
+        <a href="#zaproszenia">Zaproszenia</a>
+        <a href="#winietki">Winietki</a>
+        <a href="#zawieszki">Zawieszki</a>
+        <a href="#wieszaki">Wieszaki</a>
+        <a href="#koszyki">Koszyki</a>
+        <a href="#skrzynki">Skrzynki</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- WZORZEC SEKCJI PRODUKTU -->
+    <!-- Skopiuj i dostosuj poniższy kod dla każdego produktu -->
+
+    <section id="zaproszenia">
+        <h2>Zaproszenia</h2>
+        <div class="gallery">
+            <img src="images/zaproszenia/1.jpg" alt="Wzór 1">
+            <img src="images/zaproszenia/2.jpg" alt="Wzór 2">
+            <img src="images/zaproszenia/3.jpg" alt="Wzór 3">
+            <img src="images/zaproszenia/4.jpg" alt="Wzór 4">
+            <img src="images/zaproszenia/5.jpg" alt="Wzór 5">
+        </div>
+        <form>
+            <h3>Personalizacja zaproszeń</h3>
+            <label>Wybierz wzór:</label>
+            <select>
+                <option>Wzór 1</option>
+                <option>Wzór 2</option>
+                <option>Wzór 3</option>
+                <option>Wzór 4</option>
+                <option>Wzór 5</option>
+            </select>
+            <label>Wybierz tekst:</label>
+            <select><option>Tekst 1</option><option>Tekst 2</option></select>
+            <label>Rodzaj opakowania:</label>
+            <select><option>Koperta</option><option>Kalka</option></select>
+            <label>Rodzaj zamknięcia:</label>
+            <select><option>Lak</option><option>Wstążka</option></select>
+            <label>Rodzaj ozdoby:</label>
+            <select><option>Kłos</option><option>Kwiat</option><option>Liść</option></select>
+            <label>Dane:</label>
+            <textarea placeholder="Imiona, data, miejsce, kontakt..." rows="4"></textarea>
+            <label>Informacja o noclegu?</label>
+            <select><option>Tak</option><option>Nie</option></select>
+            <label>Informacja o prezentach?</label>
+            <select><option>Tak</option><option>Nie</option></select>
+            <label>Czy cytat o miłości?</label>
+            <select><option>Tak</option><option>Nie</option></select>
+        </form>
+    </section>
 
   <section>
     <h2>Winietki</h2>
