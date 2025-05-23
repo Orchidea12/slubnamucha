@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalizacja Zaproszeń</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background: #fff7f7; }
+    label { display: block; margin-top: 20px; font-weight: bold; }
+    select, textarea, input[type="text"] { width: 100%; padding: 10px; margin-top: 5px; }
+    button { margin-top: 30px; padding: 15px 25px; background: #a14646; color: white; border: none; cursor: pointer; }
+    .summary { margin-top: 40px; background: #fbecec; padding: 20px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Stwórz swoje wymarzone zaproszenie ślubne</h1>
+
+  <form id="customForm">
+    <label for="wzor">Wybierz wzór:</label>
+    <select id="wzor">
+      <option>Rustykalny</option>
+      <option>Glamour</option>
+      <option>Boho</option>
+      <option>Minimalistyczny</option>
+    </select>
+
+    <label for="kolor">Wybierz kolor zaproszenia:</label>
+    <select id="kolor">
+      <option>Biały</option>
+      <option>Ecru</option>
+      <option>Różowy</option>
+      <option>Granatowy</option>
+    </select>
+
+    <label for="tekst">Wpisz tekst zaproszenia:</label>
+    <textarea id="tekst" rows="4" placeholder="Wpisz tutaj treść zaproszenia..."></textarea>
+
+    <label for="koperta">Czy ma być koperta?</label>
+    <select id="koperta">
+      <option>Tak</option>
+      <option>Nie</option>
+    </select>
+
+    <label for="kalka">Czy ma być kalka?</label>
+    <select id="kalka">
+      <option>Tak</option>
+      <option>Nie</option>
+    </select>
+
+    <label for="zaklejenie">Sposób zaklejenia:</label>
+    <select id="zaklejenie">
+      <option>Lak</option>
+      <option>Wstążka</option>
+      <option>Bez zaklejenia</option>
+    </select>
+
+    <label for="przewiazanie">Czy zaproszenie ma być przewiązane?</label>
+    <select id="przewiazanie">
+      <option>Tak</option>
+      <option>Nie</option>
+    </select>
+
+    <label for="dodatek">Dodatkowy element:</label>
+    <select id="dodatek">
+      <option>Kłos</option>
+      <option>Suszony kwiat</option>
+      <option>Bez dodatku</option>
+    </select>
+
+    <button type="button" onclick="pokazPodsumowanie()">Zapisz personalizację</button>
+  </form>
+
+  <div class="summary" id="podsumowanie" style="display:none">
+    <h2>Twoje zaproszenie:</h2>
+    <p id="rezultat"></p>
+  </div>
+
+  <script>
+    function pokazPodsumowanie() {
+      const wzor = document.getElementById('wzor').value;
+      const kolor = document.getElementById('kolor').value;
+      const tekst = document.getElementById('tekst').value;
+      const koperta = document.getElementById('koperta').value;
+      const kalka = document.getElementById('kalka').value;
+      const zaklejenie = document.getElementById('zaklejenie').value;
+      const przewiazanie = document.getElementById('przewiazanie').value;
+      const dodatek = document.getElementById('dodatek').value;
+
+      const wynik = `Wzór: ${wzor}<br>
+        Kolor: ${kolor}<br>
+        Tekst: ${tekst}<br>
+        Koperta: ${koperta}<br>
+        Kalka: ${kalka}<br>
+        Zaklejenie: ${zaklejenie}<br>
+        Przewiązanie: ${przewiazanie}<br>
+        Dodatek: ${dodatek}`;
+
+      document.getElementById('rezultat').innerHTML = wynik;
+      document.getElementById('podsumowanie').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
