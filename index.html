@@ -14,14 +14,19 @@
       background: #f8f8f8;
     }
     header {
-      background-color: #fff;
-      padding: 20px;
+      background: linear-gradient(135deg, #f5d1d1, #fbe8d3);
+      padding: 40px 20px;
       text-align: center;
+      color: #333;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header h1 {
       margin: 0;
-      color: #333;
+      font-size: 36px;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
     }
     nav {
       background-color: #f0f0f0;
@@ -88,6 +93,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>Ślubna Mucha</h1>
     <p>Ozdoby i dodatki ślubne z personalizacją</p>
@@ -105,7 +111,6 @@
     <a href="#kontakt">Kontakt</a>
   </nav>
 
-  <!-- Galeria zdjęć -->
   <section id="zaproszenia">
     <h2>Zaproszenia</h2>
     <div class="gallery">
@@ -120,7 +125,6 @@
     <div class="gallery">
       <img src="images/winietki/1.jpg" alt="Winietka 1">
       <img src="images/winietki/2.jpg" alt="Winietka 2">
-      <img src="images/winietki/3.jpg" alt="Winietka 3">
     </div>
   </section>
 
@@ -128,8 +132,6 @@
     <h2>Zawieszki na alkohol</h2>
     <div class="gallery">
       <img src="images/zawieszki/1.jpg" alt="Zawieszka 1">
-      <img src="images/zawieszki/2.jpg" alt="Zawieszka 2">
-      <img src="images/zawieszki/3.jpg" alt="Zawieszka 3">
     </div>
   </section>
 
@@ -137,8 +139,6 @@
     <h2>Wieszaki</h2>
     <div class="gallery">
       <img src="images/wieszaki/1.jpg" alt="Wieszak 1">
-      <img src="images/wieszaki/2.jpg" alt="Wieszak 2">
-      <img src="images/wieszaki/3.jpg" alt="Wieszak 3">
     </div>
   </section>
 
@@ -146,8 +146,6 @@
     <h2>Koszyczki ratunkowe</h2>
     <div class="gallery">
       <img src="images/koszyczki/1.jpg" alt="Koszyczek 1">
-      <img src="images/koszyczki/2.jpg" alt="Koszyczek 2">
-      <img src="images/koszyczki/3.jpg" alt="Koszyczek 3">
     </div>
   </section>
 
@@ -155,8 +153,6 @@
     <h2>Skrzynki na koperty</h2>
     <div class="gallery">
       <img src="images/skrzynki/1.jpg" alt="Skrzynka 1">
-      <img src="images/skrzynki/2.jpg" alt="Skrzynka 2">
-      <img src="images/skrzynki/3.jpg" alt="Skrzynka 3">
     </div>
   </section>
 
@@ -164,67 +160,54 @@
     <h2>Prezenty dla rodziców</h2>
     <div class="gallery">
       <img src="images/prezenty/1.jpg" alt="Prezent 1">
-      <img src="images/prezenty/2.jpg" alt="Prezent 2">
-      <img src="images/prezenty/3.jpg" alt="Prezent 3">
     </div>
   </section>
 
-  <!-- Personalizacja -->
   <section id="personalizacja">
     <h2>Personalizacja zaproszenia</h2>
     <form>
-      <label for="wzor">Wybierz wzór zaproszenia:</label>
-      <select id="wzor" name="wzor">
-        <option>Rustykalny</option>
-        <option>Elegancki</option>
-        <option>Nowoczesny</option>
+      <label>Wybierz wzór zaproszenia:</label>
+      <select>
+        <option>Rustykalne</option>
+        <option>Nowoczesne</option>
+        <option>Romantyczne</option>
       </select>
 
-      <label for="kolor">Kolor zaproszenia:</label>
-      <input type="text" id="kolor" name="kolor" placeholder="np. beżowy, biały, złoty"/>
+      <label>Kolor zaproszenia:</label>
+      <input type="text" placeholder="np. pudrowy róż, ecru">
 
-      <label for="tekst">Tekst zaproszenia:</label>
-      <textarea id="tekst" name="tekst" rows="4"></textarea>
+      <label>Tekst zaproszenia:</label>
+      <textarea rows="4" placeholder="Wpisz swój tekst..."></textarea>
 
-      <label for="koperta">Czy ma być koperta?</label>
-      <select id="koperta" name="koperta">
+      <label>Dołącz kopertę?</label>
+      <select>
         <option>Tak</option>
         <option>Nie</option>
       </select>
 
-      <label for="kalka">Czy ma być kalka?</label>
-      <select id="kalka" name="kalka">
-        <option>Tak</option>
-        <option>Nie</option>
-      </select>
-
-      <label for="zaklejenie">Zaklejenie:</label>
-      <select id="zaklejenie" name="zaklejenie">
+      <label>Opcja zamknięcia:</label>
+      <select>
         <option>Lak</option>
         <option>Wstążka</option>
-        <option>Bez zaklejenia</option>
+        <option>Bez przewiązania</option>
       </select>
 
-      <label for="ozdoba">Dodatkowa ozdoba (np. kłos, kwiatek):</label>
-      <input type="text" id="ozdoba" name="ozdoba"/>
+      <label>Dodatki:</label>
+      <input type="text" placeholder="np. kłos, kwiat, susz">
 
       <button type="submit">Wyślij personalizację</button>
     </form>
   </section>
 
-  <!-- Kontakt -->
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p style="text-align:center;">
-      Masz pytania lub chcesz zamówić personalizację?<br/>
-      Napisz do mnie: <strong>kontakt@slubnamucha.pl</strong><br/>
-      lub zadzwoń: <strong>+48 123 456 789</strong>
-    </p>
+    <p>Masz pytania? Napisz do mnie na <strong>kontakt@slubnamucha.pl</strong> lub zadzwoń: <strong>+48 123 456 789</strong></p>
   </section>
 
   <footer>
-    &copy; 2025 Ślubna Mucha. Wszystkie prawa zastrzeżone.
+    <p>© 2025 Ślubna Mucha – Wszystkie prawa zastrzeżone.</p>
   </footer>
+
 </body>
 </html>
 Aktualizacja strony z grafikami
